@@ -18,22 +18,32 @@ body {
 }
 
 .container {
+    max-width: 1366px;
+    min-height: 100vh;
+    margin: 0 auto;
     background-color: var(--bg);
     display: flex;
     flex-direction: column;
-    padding: 0px 5px;
+    padding: 0px;
 }
 
 .hero-container {
-    background-image: url(src/bgImage.jpg);
-    background-size: cover;
-    background-position: center;
+    position: relative;
+    background-image: url(src/bg.png);
+    background-color: #37474f;
+    color: white;
     height: 100vh;
     display: flex;
     flex-direction: column;
-    gap: 100px;
+    
+    
 }
-
+.hero{
+background-image: url(src/bg.png);
+    background-color: #11171a;
+    background-size: cover;
+    background-position: center;
+}
 nav {
     display: flex;
     justify-content: space-between;
@@ -41,24 +51,49 @@ nav {
     align-items: center;
     padding: 0px 5px;
 }
+.navbar {
+    background-color: rgba(0, 0, 0, 0.5);
+}
 
 .logo {
     font-size: 20px;
     font-weight: bold;
-    color: #fff;
+    color: #0e0d0d;
 }
 
 .links {
     display: flex;
     gap: 20px;
+    
+    
+}
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.overlay-text h1 {
+    font-size: 3em;
+    /* Adjust the font size as needed */
+    margin-bottom: 10px;
+    color: green;
+}
+
+.overlay-text h2 {
+    font-size: 2.4em;
+    /* Adjust the font size as needed */
+    /* Additional styles for paragraphs */
+    color: blue;
 }
 
 a {
     text-decoration: none;
-    font-weight: bold;
     font-size: 20px;
     text-transform: capitalize;
-    color: var(--textColor);
+    color: #f5f0f0;
 }
 
 .hero {
@@ -69,11 +104,15 @@ a {
     justify-content: center;
     gap: 20px;
 }
+.title-name {
+    text-align: center;
+    font-size: 56px;
+}
 
 .title {
     text-align: center;
     font-weight: bold;
-    font-size: 36px;
+    font-size: 64px;
 }
 
 .cv {
@@ -126,14 +165,28 @@ a {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    gap: 30px;
+    gap: 20px;
     margin-top: 20px;
     margin-bottom: 10px;
+    padding: 8px;
 }
-
+.skill-holder{
+    display: flex;
+    flex-direction: column;
+    margin: 2px auto;
+    padding: 8px;
+}
+.skill-holder:hover{
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+.skill-name{
+    text-align: center;
+    padding: 3px;
+}
 .skill-image {
-    width: 128px;
-    height: 128px;
+    width: 100px;
+    height: 100px;
     border-radius: 20px;
 }
 
