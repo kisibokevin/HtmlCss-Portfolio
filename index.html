@@ -10,20 +10,26 @@
 </head>
 <body>
    <div class="container">
+        <nav class="navbar">
+            <h3 class="logo">KisiboKevin</h3>
+            <div class="links">
+                <a href="#">home</a>
+                <a href="#">about</a>
+                <a href="#">skills</a>
+                <a href="#">projects</a>
+                <a href="#">contact</a>
+            </div>
+        </nav>
         <div class="hero-container">
-            <nav class="navbar">
-                <h3>KisiboKevin</h3>
-                <div class="links">
-                    <a href="#">home</a>
-                    <a href="#">about</a>
-                    <a href="#">skills</a>
-                    <a href="#">projects</a>
-                    <a href="#">contact</a>
-                </div>
-            </nav>
-            <div class="overlay-text">
-                <h2 class='title-name'>Hi there! I'M Kisibo Kevin</h2>
-                <h1 class='title'>A Web Developer , turning Ideas into designs and designs into real websites.</h1>
+            <div class="hero-item">
+                <p class='text-name'>Hi there! 👋 I am Kisibo Kevin</p>
+                <p class='text-desc'>A Web Developer , turning Ideas into 
+                    designs and designs into real websites.
+                </p>
+                <button class="view-work">View My Work</button>
+            </div>
+            <div class="hero-item">
+                <img class="hero-image" src="src/bg.png" alt="">
             </div>
         </div>
         <div class="about-container">
@@ -142,15 +148,16 @@
             <h1 class='section-title'>Contact Me</h1>
             <div class="contact-content">
                 <div class="contact-info">
-                    <a href="tel:+1234567890">Call Me</a>
-                    <a href="mailto:kisibokevin@gmail.com">kisibokevin@gmail.com</a>
-                    <div>
-                        social Accounts
-                        <div>
-                            <a href="https://github.com/username">GitHub</a>
-                            <a href="https://twitter.com/username">Twitter</a>
-                            <a href="https://www.instagram.com/username/">Instagram</a>
-                            <Linkedin href="https://www.linkedin.com/in/username/">Linkedin</a>
+                    <h2 class="contact-heading">Contact Information</h2>
+                    <h3 class='contact-title'>Location 🗺️: <span class="location-name">Nairobi</span></h3>
+                    <h3 class='contact-title'>Mobile Number : <span><a class="contact-links" href="tel:+254717943544">+254717943544</a></span></h3>
+                    <h3 class='contact-title'>Email Address : <span><a class="contact-links" href="mailto:kisibokevin@gmail.com">kisibokevin@gmail.com</a></span></h3>
+                    <div class="social-accounts">
+                        <h3 class="social-title">Social Accounts</h3>
+                        <div class="social-icons">
+                            <a class="icons" href="https://github.com/username"><img src="src/github.png" alt="GitHub"/><span class="icon-name">Github</span></a>
+                            <a class="icons" href="https://twitter.com/username"><img src="src/x logo.png" alt="X Platform"/><span class="icon-name">X Platform</span></a>
+                            <a class="icons" href="https://www.linkedin.com/in/username/"><img src="src/linkedin.png" alt="Linkedin"/><span class="icon-name">Linkedin</span></a>
                         </div>
                     </div>
                     
@@ -158,16 +165,16 @@
                 <div class="mail-content">
                     <h2 class="mail-content-h1">Your Message</h2>
                     <div class="mail-inputs">
-                        <input type="text" placeholder="full name">
-                        <input type="email" placeholder="email">
-                        <textarea name="your-message" id="" cols="30" rows="10"></textarea>
-                        <button>Send</button>
+                        <input class="form-input" type="text" placeholder="Full Name">
+                        <input class="form-input" type="email" placeholder="Email Address">
+                        <textarea class="form-input" type="text" name="your-message" id="" cols="30" rows="10"></textarea>
+                        <button class="send-btn">Send</button>
                     </div>
                 </div>
             </div>
-                <p class="footer-text">
-                    All rights reserved, Kevin Kisibo &copy;2023. Terms and Conditions Apply.
-                </p> 
+            <p class="footer-text">
+                All rights reserved, Kevin Kisibo &copy;2023. Terms and Conditions Apply.
+            </p> 
         </div>
    </div>
 </body>
